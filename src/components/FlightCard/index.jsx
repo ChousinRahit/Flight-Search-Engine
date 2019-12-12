@@ -4,6 +4,7 @@ import { Grid, Card, Typography, Button } from "@material-ui/core";
 import { makeStyles, useTheme } from "@material-ui/core/styles";
 import { useSelector } from "react-redux";
 import Moment from "react-moment";
+import moment from "moment";
 
 const useStyles = makeStyles(theme => ({
   arrivdiparCon: {
@@ -45,14 +46,15 @@ const useStyles = makeStyles(theme => ({
   },
   flightNumber: {
     fontSize: "10px"
+  },
+  flightCard: {
+    boxShadow: "0px 0px 12px rgba(0,0,0,0.1)"
   }
 }));
 const FlightCard = props => {
   const classes = useStyles();
   const { flight } = props;
   const isReturn = useSelector(state => state.isReturn);
-
-  console.log(flight);
   const {
     flightNumber,
     airlineName,
@@ -64,9 +66,22 @@ const FlightCard = props => {
     arrivalTime
   } = flight;
 
+  const getReturnDepTime = () => {
+    const ll = new Date(
+      moment(`${departure} ${departureTime}`, "YYYY-MM-DD")
+        .add(1, "HOUR")
+        .format("YYYY-MM-DD hh:mm")
+    );
+
+    console.log(moment(ll));
+  };
+  const getReturnArTime = () => {
+    // console.log(moment(departure, "YYYY-MM-DD").add(1, "day"));
+  };
+
   return (
     <Grid item xs={12} md={12} lg={6} className={classes.eachCard}>
-      <Card>
+      <Card className={classes.flightCard}>
         <div>
           <div className={classes.flightHeadImg}>
             <div>
@@ -90,10 +105,10 @@ const FlightCard = props => {
                       AIV75
                     </Typography>
                     <Typography>
-                      ppm <FlightIcon className={classes.flightIcon} /> inc
+                      {to} <FlightIcon className={classes.flightIcon} /> {from}
                     </Typography>
-                    <Typography>Depart : 19:00</Typography>
-                    <Typography>Depart : 19:00</Typography>
+                    <Typography>Depart : {getReturnDepTime()}</Typography>
+                    <Typography>Depart : {getReturnArTime()}</Typography>
                   </div>
                 )}
               </div>

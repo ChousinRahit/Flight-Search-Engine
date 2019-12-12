@@ -10,6 +10,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { getData } from "../../store/actions";
 import FlightCard from "../FlightCard";
 import DrawerForm from "../FormComp/index";
+import flights from "../../assets/fd";
 
 const drawerWidth = 280;
 
@@ -108,7 +109,9 @@ const MainComp = () => {
         <Container>
           <Grid container>
             {allFlights.length ? (
-              allFlights.map(flight => <FlightCard flight={flight} />)
+              allFlights.map(flight => (
+                <FlightCard key={flight.id} flight={flight} />
+              ))
             ) : (
               <Typography variant="h6">
                 No Flights Available on Your Search
