@@ -42,11 +42,19 @@ const _getAllCities = (flights = []) => {
 };
 
 const _filterWithData = obj => {
-  const { fr, to } = obj;
-
+  const { fr, to, dep, price } = obj;
+  const depDate = new Date(dep).toString();
   return flights.filter(f => {
-    if (f.from === fr && f.to === to) {
-      return true;
+    const eachDate = new Date(f.departure).toString();
+    if (f.from === fr && f.to === to && eachDate === depDate) {
+      return _filterWithPrice(f, price);
     }
   });
+};
+
+const _filterWithPrice = (f, price) => {
+  console.log(f.price, price[0]);
+  if (f.price > price[0] && f.price < price[1]) {
+    return true;
+  }
 };

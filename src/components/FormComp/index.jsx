@@ -74,7 +74,8 @@ const DrawerForm = props => {
       filterFlights({
         fr: formData.fromCity,
         to: formData.toCity,
-        dep: formData.DepTime
+        dep: formData.DepTime,
+        price: slrvalue
       })
     );
   };
