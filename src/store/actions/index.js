@@ -46,7 +46,7 @@ const _filterWithData = obj => {
   const depDate = new Date(dep).toString();
   return flights.filter(f => {
     const eachDate = new Date(f.departure).toString();
-    if (f.from === fr && f.to === to && eachDate === depDate) {
+    if (f.from === fr && f.to === to && (eachDate === depDate || dep === "")) {
       return _filterWithPrice(f, price);
     }
   });

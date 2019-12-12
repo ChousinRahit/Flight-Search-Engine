@@ -70,20 +70,22 @@ const DrawerForm = ({ setMobileOpen }) => {
   };
 
   const onSubmitHandler = () => {
-    dispatch(
-      filterFlights({
-        fr: formData.fromCity,
-        to: formData.toCity,
-        dep: formData.DepTime,
-        price: slrvalue
-      })
-    );
-    setMobileOpen(false);
+    if (formData.fromCity !== "" && formData.toCity !== "") {
+      dispatch(
+        filterFlights({
+          fr: formData.fromCity,
+          to: formData.toCity,
+          dep: formData.DepTime,
+          price: slrvalue
+        })
+      );
+      setMobileOpen(false);
+    }
   };
 
   return (
     <div>
-      <Typography className={classes.textHead}>Select Your Flight</Typography>
+      <Typography className={classes.textHead}>Search Your Flight</Typography>
       <AppBar
         position="static"
         color="default"
