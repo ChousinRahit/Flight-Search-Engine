@@ -40,7 +40,7 @@ const DrawerForm = props => {
   const cities = useSelector(state => state.cities);
   const dispatch = useDispatch();
 
-  const [slrvalue, setSlralue] = React.useState([20, 37]);
+  const [slrvalue, setSlralue] = React.useState([2000, 7007]);
   const isReturn = useSelector(state => state.isReturn);
 
   const handleChange = (event, newValue) => {
@@ -225,12 +225,13 @@ const DrawerForm = props => {
                 aria-labelledby="range-slider"
                 getAriaValueText={valuetext}
                 className={classes.slider}
-                max={50000}
+                min={1000}
+                max={15000}
               />
             </div>
           </ListItem>
           <ListItem>
-            <Button variant="outlined" onClick={onSubmitHandler}>
+            <Button variant="contained" onClick={onSubmitHandler}>
               Search
             </Button>
           </ListItem>
