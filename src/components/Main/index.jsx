@@ -33,7 +33,8 @@ const useStyles = makeStyles(theme => ({
     marginRight: theme.spacing(2),
     [theme.breakpoints.up("sm")]: {
       display: "none"
-    }
+    },
+    color: "#fff"
   },
   toolbar: theme.mixins.toolbar,
   drawerPaper: {
@@ -87,7 +88,7 @@ const MainComp = () => {
               keepMounted: true
             }}
           >
-            <DrawerForm allFlights={allFlights} />
+            <DrawerForm allFlights={allFlights} setMobileOpen={setMobileOpen} />
           </Drawer>
         </Hidden>
         <Hidden xsDown>
@@ -98,7 +99,7 @@ const MainComp = () => {
             variant="permanent"
             open
           >
-            <DrawerForm allFlights={allFlights} />
+            <DrawerForm allFlights={allFlights} setMobileOpen={setMobileOpen} />
           </Drawer>
         </Hidden>
       </nav>

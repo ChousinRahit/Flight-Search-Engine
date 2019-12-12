@@ -28,7 +28,7 @@ function valuetext(value) {
   return `${value}k`;
 }
 
-const DrawerForm = props => {
+const DrawerForm = ({ setMobileOpen }) => {
   const classes = useStyles();
   const [formData, setFormData] = useState({
     fromCity: "",
@@ -78,6 +78,7 @@ const DrawerForm = props => {
         price: slrvalue
       })
     );
+    setMobileOpen(false);
   };
 
   return (
