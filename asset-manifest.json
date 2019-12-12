@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/Flight-Search-Engine/static/css/main.40be26e1.chunk.css",
+    "main.js": "/Flight-Search-Engine/static/js/main.83990093.chunk.js",
+    "main.js.map": "/Flight-Search-Engine/static/js/main.83990093.chunk.js.map",
+    "runtime-main.js": "/Flight-Search-Engine/static/js/runtime-main.85c05580.js",
+    "runtime-main.js.map": "/Flight-Search-Engine/static/js/runtime-main.85c05580.js.map",
+    "static/js/2.f4389477.chunk.js": "/Flight-Search-Engine/static/js/2.f4389477.chunk.js",
+    "static/js/2.f4389477.chunk.js.map": "/Flight-Search-Engine/static/js/2.f4389477.chunk.js.map",
+    "index.html": "/Flight-Search-Engine/index.html",
+    "precache-manifest.4ae0c52683bfcbd6dd94a3af6b716a48.js": "/Flight-Search-Engine/precache-manifest.4ae0c52683bfcbd6dd94a3af6b716a48.js",
+    "service-worker.js": "/Flight-Search-Engine/service-worker.js",
+    "static/css/main.40be26e1.chunk.css.map": "/Flight-Search-Engine/static/css/main.40be26e1.chunk.css.map",
+    "static/js/2.f4389477.chunk.js.LICENSE": "/Flight-Search-Engine/static/js/2.f4389477.chunk.js.LICENSE",
+    "static/media/air-asia.png": "/Flight-Search-Engine/static/media/air-asia.326dbf06.png",
+    "static/media/air-india.png": "/Flight-Search-Engine/static/media/air-india.d10bbd23.png",
+    "static/media/indigo.png": "/Flight-Search-Engine/static/media/indigo.3a1d216e.png",
+    "static/media/jet-airways.png": "/Flight-Search-Engine/static/media/jet-airways.10640307.png",
+    "static/media/spicejet.png": "/Flight-Search-Engine/static/media/spicejet.1c44c078.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.85c05580.js",
+    "static/js/2.f4389477.chunk.js",
+    "static/css/main.40be26e1.chunk.css",
+    "static/js/main.83990093.chunk.js"
+  ]
+}
