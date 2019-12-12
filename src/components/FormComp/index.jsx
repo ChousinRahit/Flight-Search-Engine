@@ -6,7 +6,6 @@ import {
   ListItem,
   Button,
   AppBar,
-  Divider,
   MenuItem,
   InputLabel,
   TextField,
@@ -44,7 +43,6 @@ const DrawerForm = ({ setMobileOpen }) => {
   const isReturn = useSelector(state => state.isReturn);
 
   const handleChange = (event, newValue) => {
-    console.log(event, newValue);
     setSlralue(newValue);
   };
 
@@ -57,7 +55,7 @@ const DrawerForm = ({ setMobileOpen }) => {
 
   useEffect(() => {
     dispatch(getAllCities());
-  }, []);
+  }, [dispatch]);
 
   const handlePCount = v => {
     let pCount = formData.pCount + v;
@@ -86,14 +84,7 @@ const DrawerForm = ({ setMobileOpen }) => {
   return (
     <div>
       <Typography className={classes.textHead}>Search Your Flight</Typography>
-      <AppBar
-        position="static"
-        color="default"
-        indicatorColor="primary"
-        textColor="primary"
-        noWrap
-        className={classes.topBar}
-      >
+      <AppBar position="static" color="default" className={classes.topBar}>
         <div className={classes.tabs}>
           <Button
             className={classes.tabbtn}
@@ -162,7 +153,6 @@ const DrawerForm = ({ setMobileOpen }) => {
               name="DepTime"
               label="Departure Date"
               type="date"
-              defaultValue="2017-05-24"
               className={classes.SelectCity}
               InputLabelProps={{
                 shrink: true
@@ -177,7 +167,6 @@ const DrawerForm = ({ setMobileOpen }) => {
                 name="arTime"
                 label="Return Date"
                 type="date"
-                defaultValue="2017-05-24"
                 className={classes.SelectCity}
                 InputLabelProps={{
                   shrink: true

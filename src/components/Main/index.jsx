@@ -1,4 +1,4 @@
-import React, { Fragment, useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { AppBar, Typography, Container, Grid } from "@material-ui/core";
 import Drawer from "@material-ui/core/Drawer";
 import Hidden from "@material-ui/core/Hidden";
@@ -10,7 +10,6 @@ import { useSelector, useDispatch } from "react-redux";
 import { getData } from "../../store/actions";
 import FlightCard from "../FlightCard";
 import DrawerForm from "../FormComp/index";
-import flights from "../../assets/fd";
 
 const drawerWidth = 280;
 
@@ -55,7 +54,7 @@ const MainComp = () => {
 
   useEffect(() => {
     dispatch(getData());
-  }, []);
+  }, [dispatch]);
   const handleDrawerToggle = () => {
     setMobileOpen(!mobileOpen);
   };

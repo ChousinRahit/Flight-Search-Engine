@@ -12,7 +12,7 @@ const flights = [
     departureTime: "10:00 AM",
     arrivalTime: "12:10 AM",
     price: 60,
-    isReturn: 0
+    returntime: 0
   },
   {
     airlineName: "air-india",
@@ -25,7 +25,7 @@ const flights = [
     departureTime: "21:00 AM",
     arrivalTime: "23:10 AM",
     price: 70,
-    isReturn: 7
+    returntime: 7
   },
   {
     airlineName: "air-india",
@@ -38,7 +38,7 @@ const flights = [
     departureTime: "12:00 AM",
     arrivalTime: "13:30 PM",
     price: 101,
-    isReturn: 0
+    returntime: 0
   },
   {
     airlineName: "spicejet",
@@ -51,7 +51,7 @@ const flights = [
     departureTime: "10:00 AM",
     arrivalTime: "12:10 AM",
     price: 99,
-    isReturn: 8
+    returntime: 8
   },
   {
     airlineName: "indigo",
@@ -64,7 +64,7 @@ const flights = [
     departureTime: "10:00 AM",
     arrivalTime: "12:10 AM",
     price: 59,
-    isReturn: 10
+    returntime: 10
   },
   {
     airlineName: "indigo",
@@ -77,7 +77,7 @@ const flights = [
     departureTime: "10:00 AM",
     arrivalTime: "12:10 AM",
     price: 60,
-    isReturn: 0
+    returntime: 0
   },
   {
     airlineName: "spicejet",
@@ -90,7 +90,7 @@ const flights = [
     departureTime: "10:00 AM",
     arrivalTime: "12:10 AM",
     price: 72,
-    isReturn: 9
+    returntime: 9
   },
   {
     airlineName: "spicejet",
@@ -103,7 +103,7 @@ const flights = [
     departureTime: "10:00 AM",
     arrivalTime: "12:10 AM",
     price: 63,
-    isReturn: 14
+    returntime: 14
   },
   {
     airlineName: "air-india",
@@ -116,7 +116,7 @@ const flights = [
     departureTime: "16:00 AM",
     arrivalTime: "17:30 PM",
     price: 70,
-    isReturn: 10
+    returntime: 10
   },
   {
     airlineName: "air-india",
@@ -129,7 +129,7 @@ const flights = [
     departureTime: "07:00 AM",
     arrivalTime: "10:30 AM",
     price: 130,
-    isReturn: 9
+    returntime: 9
   },
   {
     airlineName: "air-india",
@@ -142,7 +142,7 @@ const flights = [
     departureTime: "20:10 AM",
     arrivalTime: "13:10 AM",
     price: 42,
-    isReturn: 0
+    returntime: 0
   },
   {
     airlineName: "air-india",
@@ -155,7 +155,7 @@ const flights = [
     departureTime: "10:00 AM",
     arrivalTime: "12:10 AM",
     price: 80,
-    isReturn: 9
+    returntime: 9
   },
   {
     airlineName: "air-india",
@@ -168,7 +168,7 @@ const flights = [
     departureTime: "10:00 AM",
     arrivalTime: "12:10 AM",
     price: 40,
-    isReturn: 18
+    returntime: 18
   },
   {
     airlineName: "air-india",
@@ -181,7 +181,7 @@ const flights = [
     departureTime: "12:00 AM",
     arrivalTime: "13:30 PM",
     price: 101,
-    isReturn: 11
+    returntime: 11
   },
   {
     airlineName: "air-india",
@@ -194,7 +194,7 @@ const flights = [
     departureTime: "16:00 AM",
     arrivalTime: "17:30 PM",
     price: 70,
-    isReturn: 0
+    returntime: 0
   },
   {
     airlineName: "air-india",
@@ -207,7 +207,7 @@ const flights = [
     departureTime: "07:00 AM",
     arrivalTime: "10:30 AM",
     price: 130,
-    isReturn: 9
+    returntime: 9
   },
   {
     airlineName: "air-india",
@@ -220,7 +220,7 @@ const flights = [
     departureTime: "20:10 AM",
     arrivalTime: "13:10 AM",
     price: 42,
-    isReturn: 13
+    returntime: 13
   },
   {
     airlineName: "air-india",
@@ -233,7 +233,7 @@ const flights = [
     departureTime: "10:00 AM",
     arrivalTime: "12:10 AM",
     price: 5,
-    isReturn: 16
+    returntime: 16
   },
   {
     airlineName: "air-india",
@@ -246,7 +246,7 @@ const flights = [
     departureTime: "10:00 AM",
     arrivalTime: "12:10 AM",
     price: 70,
-    isReturn: 0
+    returntime: 0
   },
   {
     airlineName: "air-india",
@@ -259,7 +259,7 @@ const flights = [
     departureTime: "12:00 AM",
     arrivalTime: "13:30 PM",
     price: 101,
-    isReturn: 10
+    returntime: 10
   },
   {
     airlineName: "air-india",
@@ -272,7 +272,7 @@ const flights = [
     departureTime: "16:00 AM",
     arrivalTime: "17:30 PM",
     price: 70,
-    isReturn: 8
+    returntime: 8
   },
   {
     airlineName: "air-india",
@@ -285,7 +285,7 @@ const flights = [
     departureTime: "07:00 AM",
     arrivalTime: "10:30 AM",
     price: 130,
-    isReturn: 14
+    returntime: 14
   },
   {
     airlineName: "air-india",
@@ -298,7 +298,7 @@ const flights = [
     departureTime: "20:10 AM",
     arrivalTime: "13:10 AM",
     price: 42,
-    isReturn: 8
+    returntime: 8
   },
 
   {
@@ -312,7 +312,7 @@ const flights = [
     departureTime: "10:00 AM",
     arrivalTime: "12:10 AM",
     price: 44,
-    isReturn: 5
+    returntime: 5
   },
   {
     airlineName: "indigo",
@@ -325,7 +325,7 @@ const flights = [
     departureTime: "10:00 AM",
     arrivalTime: "12:10 AM",
     price: 66,
-    isReturn: 15
+    returntime: 15
   },
   {
     airlineName: "indigo",
@@ -338,7 +338,7 @@ const flights = [
     departureTime: "10:00 AM",
     arrivalTime: "12:10 AM",
     price: 42,
-    isReturn: 6
+    returntime: 6
   },
   {
     airlineName: "indigo",
@@ -351,7 +351,7 @@ const flights = [
     departureTime: "10:00 AM",
     arrivalTime: "12:10 AM",
     price: 66,
-    isReturn: 10
+    returntime: 10
   },
   {
     airlineName: "indigo",
@@ -364,7 +364,7 @@ const flights = [
     departureTime: "10:00 AM",
     arrivalTime: "12:10 AM",
     price: 58,
-    isReturn: 16
+    returntime: 16
   },
   {
     airlineName: "indigo",
@@ -377,7 +377,7 @@ const flights = [
     departureTime: "10:00 AM",
     arrivalTime: "12:10 AM",
     price: 49,
-    isReturn: 10
+    returntime: 10
   },
   {
     airlineName: "indigo",
@@ -390,7 +390,7 @@ const flights = [
     departureTime: "10:00 AM",
     arrivalTime: "12:10 AM",
     price: 59,
-    isReturn: 11
+    returntime: 11
   },
   {
     airlineName: "indigo",
@@ -403,7 +403,7 @@ const flights = [
     departureTime: "10:00 AM",
     arrivalTime: "12:10 AM",
     price: 60,
-    isReturn: 16
+    returntime: 16
   },
   {
     airlineName: "indigo",
@@ -415,7 +415,7 @@ const flights = [
     departure: "2019-12-14",
     departureTime: "10:00 AM",
     price: 42,
-    isReturn: 11
+    returntime: 11
   },
   {
     airlineName: "indigo",
@@ -427,7 +427,7 @@ const flights = [
     departure: "2019-12-14",
     arrivalTime: "12:10 AM",
     price: 66,
-    isReturn: 14
+    returntime: 14
   },
   {
     airlineName: "spicejet",
@@ -440,7 +440,7 @@ const flights = [
     departureTime: "10:00 AM",
     arrivalTime: "12:10 AM",
     price: 75,
-    isReturn: 13
+    returntime: 13
   },
 
   {
@@ -454,7 +454,7 @@ const flights = [
     departureTime: "10:00 AM",
     arrivalTime: "12:10 AM",
     price: 55,
-    isReturn: 10
+    returntime: 10
   },
   {
     airlineName: "spicejet",
@@ -467,7 +467,7 @@ const flights = [
     departureTime: "10:00 AM",
     arrivalTime: "12:10 AM",
     price: 61,
-    isReturn: 12
+    returntime: 12
   },
   {
     airlineName: "spicejet",
@@ -480,7 +480,7 @@ const flights = [
     departureTime: "10:00 AM",
     arrivalTime: "12:10 AM",
     price: 47,
-    isReturn: 10
+    returntime: 10
   },
   {
     airlineName: "spicejet",
@@ -493,7 +493,7 @@ const flights = [
     departureTime: "10:00 AM",
     arrivalTime: "12:10 AM",
     price: 70,
-    isReturn: 9
+    returntime: 9
   },
   {
     airlineName: "air-india",
@@ -506,7 +506,7 @@ const flights = [
     departureTime: "10:00 AM",
     arrivalTime: "12:10 AM",
     price: 60,
-    isReturn: 8
+    returntime: 8
   },
   {
     airlineName: "air-india",
@@ -519,7 +519,7 @@ const flights = [
     departureTime: "21:00 AM",
     arrivalTime: "23:10 AM",
     price: 70,
-    isReturn: 11
+    returntime: 11
   },
   {
     airlineName: "air-india",
@@ -532,7 +532,7 @@ const flights = [
     departureTime: "12:00 AM",
     arrivalTime: "13:30 PM",
     price: 101,
-    isReturn: 11
+    returntime: 11
   },
   {
     airlineName: "spicejet",
@@ -545,7 +545,7 @@ const flights = [
     departureTime: "10:00 AM",
     arrivalTime: "12:10 AM",
     price: 99,
-    isReturn: 12
+    returntime: 12
   },
   {
     airlineName: "indigo",
@@ -558,7 +558,7 @@ const flights = [
     departureTime: "10:00 AM",
     arrivalTime: "12:10 AM",
     price: 59,
-    isReturn: 12
+    returntime: 12
   },
   {
     airlineName: "indigo",
@@ -571,7 +571,7 @@ const flights = [
     departureTime: "10:00 AM",
     arrivalTime: "12:10 AM",
     price: 60,
-    isReturn: 9
+    returntime: 9
   },
   {
     airlineName: "spicejet",
@@ -584,7 +584,7 @@ const flights = [
     departureTime: "10:00 AM",
     arrivalTime: "12:10 AM",
     price: 72,
-    isReturn: 13
+    returntime: 13
   },
   {
     airlineName: "spicejet",
@@ -597,7 +597,7 @@ const flights = [
     departureTime: "10:00 AM",
     arrivalTime: "12:10 AM",
     price: 63,
-    isReturn: 12
+    returntime: 12
   },
   {
     airlineName: "air-india",
@@ -610,7 +610,7 @@ const flights = [
     departureTime: "16:00 AM",
     arrivalTime: "17:30 PM",
     price: 70,
-    isReturn: 5
+    returntime: 5
   },
   {
     airlineName: "air-india",
@@ -623,7 +623,7 @@ const flights = [
     departureTime: "07:00 AM",
     arrivalTime: "10:30 AM",
     price: 130,
-    isReturn: 5
+    returntime: 5
   },
   {
     airlineName: "air-india",
@@ -636,7 +636,7 @@ const flights = [
     departureTime: "20:10 AM",
     arrivalTime: "13:10 AM",
     price: 42,
-    isReturn: 9
+    returntime: 9
   },
   {
     airlineName: "air-india",
@@ -649,7 +649,7 @@ const flights = [
     departureTime: "10:00 AM",
     arrivalTime: "12:10 AM",
     price: 80,
-    isReturn: 10
+    returntime: 10
   },
   {
     airlineName: "air-india",
@@ -662,7 +662,7 @@ const flights = [
     departureTime: "10:00 AM",
     arrivalTime: "12:10 AM",
     price: 40,
-    isReturn: 11
+    returntime: 11
   },
   {
     airlineName: "air-india",
@@ -675,7 +675,7 @@ const flights = [
     departureTime: "12:00 AM",
     arrivalTime: "13:30 PM",
     price: 101,
-    isReturn: 15
+    returntime: 15
   },
   {
     airlineName: "air-india",
@@ -688,7 +688,7 @@ const flights = [
     departureTime: "16:00 AM",
     arrivalTime: "17:30 PM",
     price: 70,
-    isReturn: 12
+    returntime: 12
   },
   {
     airlineName: "air-india",
@@ -701,7 +701,7 @@ const flights = [
     departureTime: "07:00 AM",
     arrivalTime: "10:30 AM",
     price: 130,
-    isReturn: 18
+    returntime: 18
   },
   {
     airlineName: "air-india",
@@ -714,7 +714,7 @@ const flights = [
     departureTime: "20:10 AM",
     arrivalTime: "13:10 AM",
     price: 42,
-    isReturn: 24
+    returntime: 24
   },
   {
     airlineName: "air-india",
@@ -727,7 +727,7 @@ const flights = [
     departureTime: "10:00 AM",
     arrivalTime: "12:10 AM",
     price: 5,
-    isReturn: 12
+    returntime: 12
   },
   {
     airlineName: "air-india",
@@ -740,7 +740,7 @@ const flights = [
     departureTime: "10:00 AM",
     arrivalTime: "12:10 AM",
     price: 70,
-    isReturn: 13
+    returntime: 13
   },
   {
     airlineName: "air-india",
@@ -753,7 +753,7 @@ const flights = [
     departureTime: "12:00 AM",
     arrivalTime: "13:30 PM",
     price: 101,
-    isReturn: 15
+    returntime: 15
   },
   {
     airlineName: "air-india",
@@ -766,7 +766,7 @@ const flights = [
     departureTime: "16:00 AM",
     arrivalTime: "17:30 PM",
     price: 70,
-    isReturn: 0
+    returntime: 0
   },
   {
     airlineName: "air-india",
@@ -779,7 +779,7 @@ const flights = [
     departureTime: "07:00 AM",
     arrivalTime: "10:30 AM",
     price: 130,
-    isReturn: 0
+    returntime: 0
   },
   {
     airlineName: "air-india",
@@ -792,7 +792,7 @@ const flights = [
     departureTime: "20:10 AM",
     arrivalTime: "13:10 AM",
     price: 42,
-    isReturn: 10
+    returntime: 10
   },
 
   {
@@ -806,7 +806,7 @@ const flights = [
     departureTime: "10:00 AM",
     arrivalTime: "12:10 AM",
     price: 42,
-    isReturn: 0
+    returntime: 0
   },
   {
     airlineName: "indigo",
@@ -819,7 +819,7 @@ const flights = [
     departureTime: "10:00 AM",
     arrivalTime: "12:10 AM",
     price: 66,
-    isReturn: 6
+    returntime: 6
   },
   {
     airlineName: "indigo",
@@ -832,7 +832,7 @@ const flights = [
     departureTime: "10:00 AM",
     arrivalTime: "12:10 AM",
     price: 42,
-    isReturn: 0
+    returntime: 0
   },
   {
     airlineName: "indigo",
@@ -845,7 +845,7 @@ const flights = [
     departureTime: "10:00 AM",
     arrivalTime: "12:10 AM",
     price: 66,
-    isReturn: 0
+    returntime: 0
   },
   {
     airlineName: "indigo",
@@ -858,7 +858,7 @@ const flights = [
     departureTime: "10:00 AM",
     arrivalTime: "12:10 AM",
     price: 58,
-    isReturn: 0
+    returntime: 0
   },
   {
     airlineName: "indigo",
@@ -871,7 +871,7 @@ const flights = [
     departureTime: "10:00 AM",
     arrivalTime: "12:10 AM",
     price: 49,
-    isReturn: 0
+    returntime: 0
   },
   {
     airlineName: "indigo",
@@ -884,7 +884,7 @@ const flights = [
     departureTime: "10:00 AM",
     arrivalTime: "12:10 AM",
     price: 59,
-    isReturn: 0
+    returntime: 0
   },
   {
     airlineName: "indigo",
@@ -897,7 +897,7 @@ const flights = [
     departureTime: "10:00 AM",
     arrivalTime: "12:10 AM",
     price: 60,
-    isReturn: 0
+    returntime: 0
   },
   {
     airlineName: "indigo",
@@ -909,7 +909,7 @@ const flights = [
     departure: "2019-12-14",
     departureTime: "10:00 AM",
     price: 42,
-    isReturn: 6
+    returntime: 6
   },
   {
     airlineName: "indigo",
@@ -921,7 +921,7 @@ const flights = [
     departure: "2019-12-14",
     arrivalTime: "12:10 AM",
     price: 66,
-    isReturn: 4
+    returntime: 4
   },
   {
     airlineName: "spicejet",
@@ -934,7 +934,7 @@ const flights = [
     departureTime: "10:00 AM",
     arrivalTime: "12:10 AM",
     price: 75,
-    isReturn: 10
+    returntime: 10
   },
 
   {
@@ -948,7 +948,7 @@ const flights = [
     departureTime: "10:00 AM",
     arrivalTime: "12:10 AM",
     price: 55,
-    isReturn: 11
+    returntime: 11
   },
   {
     airlineName: "spicejet",
@@ -961,7 +961,7 @@ const flights = [
     departureTime: "10:00 AM",
     arrivalTime: "12:10 AM",
     price: 61,
-    isReturn: 9
+    returntime: 9
   },
   {
     airlineName: "spicejet",
@@ -974,7 +974,7 @@ const flights = [
     departureTime: "10:00 AM",
     arrivalTime: "12:10 AM",
     price: 47,
-    isReturn: 13
+    returntime: 13
   },
   {
     airlineName: "spicejet",
@@ -987,7 +987,7 @@ const flights = [
     departureTime: "10:00 AM",
     arrivalTime: "12:10 AM",
     price: 70,
-    isReturn: 19
+    returntime: 19
   },
   {
     airlineName: "air-india",
@@ -1000,7 +1000,7 @@ const flights = [
     departureTime: "12:00 AM",
     arrivalTime: "13:30 PM",
     price: 101,
-    isReturn: 11
+    returntime: 11
   },
 
   {
@@ -1014,7 +1014,7 @@ const flights = [
     departureTime: "07:00 AM",
     arrivalTime: "10:30 AM",
     price: 130,
-    isReturn: 8
+    returntime: 8
   },
 
   {
@@ -1028,7 +1028,7 @@ const flights = [
     departureTime: "12:00 AM",
     arrivalTime: "13:30 PM",
     price: 101,
-    isReturn: 0
+    returntime: 0
   },
 
   {
@@ -1042,7 +1042,7 @@ const flights = [
     departureTime: "07:00 AM",
     arrivalTime: "10:30 AM",
     price: 130,
-    isReturn: 0
+    returntime: 0
   },
   {
     airlineName: "air-india",
@@ -1055,7 +1055,7 @@ const flights = [
     departureTime: "12:00 AM",
     arrivalTime: "13:30 PM",
     price: 101,
-    isReturn: 1
+    returntime: 1
   },
 
   {
@@ -1069,7 +1069,7 @@ const flights = [
     departureTime: "07:00 AM",
     arrivalTime: "10:30 AM",
     price: 130,
-    isReturn: 10
+    returntime: 10
   },
 
   {
@@ -1083,7 +1083,7 @@ const flights = [
     departureTime: "10:00 AM",
     arrivalTime: "12:10 AM",
     price: 42,
-    isReturn: 11
+    returntime: 11
   },
   {
     airlineName: "indigo",
@@ -1095,7 +1095,7 @@ const flights = [
     departure: "2019-12-14",
     departureTime: "10:00 AM",
     price: 42,
-    isReturn: 9
+    returntime: 9
   },
 
   {
@@ -1109,7 +1109,7 @@ const flights = [
     departureTime: "10:00 AM",
     arrivalTime: "12:10 AM",
     price: 47,
-    isReturn: 4
+    returntime: 4
   }
 ];
 

@@ -3,7 +3,6 @@ import { INITIALIZEDATA, GET_CITIES, CHANGE_TAB, FILTER_DATA } from "./types";
 // const FlightData = require("../../assets/flightData.json");
 // const FlightData1 = require("../../assets/flightdata1.json");
 import flights from "../../assets/fd";
-import moment from "moment";
 
 export const getData = () => ({
   type: INITIALIZEDATA,
@@ -37,7 +36,6 @@ const _getAllCities = (flights = []) => {
     return f.from;
   });
   let uniqueCities = Array.from(new Set(cities));
-  console.log(uniqueCities);
   return uniqueCities;
 };
 
@@ -49,6 +47,7 @@ const _filterWithData = obj => {
     if (f.from === fr && f.to === to && (eachDate === depDate || dep === "")) {
       return _filterWithPrice(f, price);
     }
+    return false;
   });
 };
 
@@ -57,7 +56,6 @@ const _filterWithData = obj => {
 // }
 
 const _filterWithPrice = (f, price) => {
-  console.log(f.price, price[0]);
   if (f.price > price[0] && f.price < price[1]) {
     return true;
   }

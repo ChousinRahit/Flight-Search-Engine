@@ -6,7 +6,6 @@ const initialState = {
 const reducer = (state = initialState, action) => {
   switch (action.type) {
     case CHANGE_TAB:
-      console.log(action.data);
       return action.data;
     default:
       return state;

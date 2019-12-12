@@ -5,7 +5,7 @@ const MySlider = withStyles({
   root: {
     color: "#5efc2e",
     height: 8,
-    width: 230,
+    width: 230
   },
   thumb: {
     height: 24,
@@ -24,9 +24,6 @@ const MySlider = withStyles({
     backgroundColor: "rgba(0, 0, 0, 0)",
     color: "rgba(0, 0, 0, 0)",
     fontSize: "0px"
-  },
-  PrivateValueLabel: {
-    display: "none"
   },
   track: {
     height: 8,

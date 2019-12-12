@@ -1,9 +1,8 @@
 import React from "react";
 import FlightIcon from "@material-ui/icons/Flight";
 import { Grid, Card, Typography, Button } from "@material-ui/core";
-import { makeStyles, useTheme } from "@material-ui/core/styles";
+import { makeStyles } from "@material-ui/core/styles";
 import { useSelector } from "react-redux";
-import Moment from "react-moment";
 import moment from "moment";
 
 const useStyles = makeStyles(theme => ({
@@ -63,20 +62,25 @@ const FlightCard = props => {
     to,
     departure,
     departureTime,
-    arrivalTime
+    arrivalTime,
+    returntime
   } = flight;
 
   const getReturnDepTime = () => {
     const ll = new Date(
-      moment(`${departure} ${departureTime}`, "YYYY-MM-DD")
-        .add(1, "HOUR")
-        .format("YYYY-MM-DD hh:mm")
+      moment(`${departure} ${departureTime}`, "YYYY-MM-DD hh:mm")
     );
+    ll.setHours(ll.getHours() + returntime);
 
-    console.log(moment(ll));
+    return moment(ll).format("YYYY-MM-DD hh:mm");
   };
   const getReturnArTime = () => {
-    // console.log(moment(departure, "YYYY-MM-DD").add(1, "day"));
+    const ll = new Date(
+      moment(`${departure} ${arrivalTime}`, "YYYY-MM-DD hh:mm")
+    );
+    ll.setHours(ll.getHours() + returntime);
+
+    return moment(ll).format("hh:mm");
   };
 
   return (
@@ -99,7 +103,7 @@ const FlightCard = props => {
                   </Typography>
                   <Typography>Arrival :{arrivalTime} </Typography>
                 </div>
-                {isReturn && (
+                {isReturn && returntime > 0 && (
                   <div className={classes.arrivdipar}>
                     <Typography className={classes.flightNumber}>
                       AIV75
@@ -108,7 +112,7 @@ const FlightCard = props => {
                       {to} <FlightIcon className={classes.flightIcon} /> {from}
                     </Typography>
                     <Typography>Depart : {getReturnDepTime()}</Typography>
-                    <Typography>Depart : {getReturnArTime()}</Typography>
+                    <Typography>Arrival : {getReturnArTime()}</Typography>
                   </div>
                 )}
               </div>
@@ -118,6 +122,7 @@ const FlightCard = props => {
                 <img
                   src={require(`../../assets/imgs/${airlineName}.png`)}
                   width="100px"
+                  alt="airlines"
                 />
               </div>
               <Button variant="outlined">Book Now</Button>
